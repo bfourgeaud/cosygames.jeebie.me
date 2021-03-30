@@ -1,8 +1,8 @@
 <template>
   <!-- Head Nav -->
-  <header class="fixed flex w-full lg:hidden bg-dark-800" :style="`height:${height}px`">
-    <div class="flex-1 flex justify-between items-center" @click="toggleDrawer">
-      <icons-menu class="fill-current ml-4" />
+  <header class="fixed flex justify-between items-center w-full lg:hidden bg-dark-800" :style="`height:${height}px`">
+    <div @click="toggleDrawer">
+      <icons-menu class="fill-current ml-4 cursor-pointer" />
     </div>
   </header>
 </template>
@@ -11,7 +11,9 @@
 import { mapMutations } from 'vuex'
 export default {
   name: 'AppBar',
-  props: ['height'],
+  props: {
+    height: { type: Number, default: 48 }
+  },
   methods: { ...mapMutations('app', ['toggleDrawer']) }
 }
 </script>
