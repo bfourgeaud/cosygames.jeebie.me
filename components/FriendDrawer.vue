@@ -9,11 +9,11 @@
       <div v-if="loggedIn" class="flex flex-col justify-center items-center py-8 px-2 h-full">
         <!-- Content -->
         <div class="rounded-full flex items-center justify-center bg-dark-800 p-4" style="width: 128px; height: 128px;">
-          <account-icon class="fill-current text-dark-600 w-full h-full" />
+          <icons-account class="fill-current text-dark-600 w-full h-full" />
         </div>
       </div>
       <div v-else class="flex flex-col text-left text-lg py-8 px-2">
-        <friend-list />
+        <lazy-friend-list />
       </div>
     </aside>
     <div v-if="drawer" class="z-40 fixed inset-0 bg-dark-500 opacity-50 w-screen h-screen lg:hidden" @click="toggleDrawer" />
