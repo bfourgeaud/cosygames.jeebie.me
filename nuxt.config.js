@@ -35,14 +35,14 @@ export default {
 
   firebase: {
     config: {
-      apiKey: 'AIzaSyAiUrRBKgGwp-1aeuRCvR8PXylG_Njnusw',
-      authDomain: 'livegames-fr.firebaseapp.com',
-      databaseURL: 'https://livegames-fr.firebaseio.com',
-      projectId: 'livegames-fr',
-      storageBucket: 'livegames-fr.appspot.com',
-      messagingSenderId: '725766803136',
-      appId: '1:725766803136:web:d39853d7f0aa7022b7a725',
-      measurementId: 'G-W5HS4VQJG1'
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.FIREBASE_DB_URL,
+      projectId: process.env.FIREBASE_PRJ_ID,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.FIREBASE_MESSAGE_ID,
+      appId: process.env.FIREBASE_APP_ID,
+      measurementId: process.env.FIREBASE_MEASURE_ID
     },
     services: {
       auth: true,
