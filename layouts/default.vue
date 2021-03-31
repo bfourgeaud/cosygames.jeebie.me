@@ -4,7 +4,7 @@
     <div class="flex">
       <main-drawer width="200" />
       <Nuxt class="px-4 mt-12 lg:mt-4 container mx-auto" />
-      <friend-drawer width="325" />
+      <lazy-friend-drawer width="325" />
     </div>
   </div>
 </template>

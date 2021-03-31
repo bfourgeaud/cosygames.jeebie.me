@@ -3,9 +3,6 @@
     <!-- Game Header -->
     <div class="relative">
       <img src="/bg.png" :alt="game.name" class="w-full object-cover" style="min-height: 50vh;">
-      <router-link to="/games" class="absolute inset-0 p-2">
-        Back to Games
-      </router-link>
       <div class="absolute inset-0 w-full h-full flex flex-col items-center justify-center">
         <img src="/game-logo.png" alt="" class="mx-auto mb-5 object-contain" style="width:200px;">
       </div>
@@ -47,6 +44,9 @@
           <p>2 days ago</p>
         </div>
       </div>
+      <router-link to="/games" class="absolute top-0 p-2">
+        Back to Games
+      </router-link>
     </div>
 
     <!-- Game Content -->
