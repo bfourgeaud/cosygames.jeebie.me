@@ -30,6 +30,12 @@
             </div>
             <div class="py-2">Games</div>
           </nuxt-link>
+          <nuxt-link to="/profile" @click.native="setDrawer(false)" class="px-4 flex items-center hover:opacity-50">
+            <div class="mr-4 my-2 flex items-center justify-center" style="height: 40px; min-width: 40px; width: 40px;">
+              <icons-account class="fill-current" />
+            </div>
+            <div class="py-2">Profile</div>
+          </nuxt-link>
           <nuxt-link to="/social" @click.native="setDrawer(false)" class="px-4 flex items-center hover:opacity-50">
             <div class="mr-4 my-2 flex items-center justify-center" style="height: 40px; min-width: 40px; width: 40px;">
               <icons-accounts class="fill-current" />
